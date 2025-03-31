@@ -9,4 +9,6 @@ module com.calculator.mycalculator {
 
     opens com.calculator.mycalculator to javafx.fxml;
     exports com.calculator.mycalculator;
+    exports com.calculator.mycalculator.controller;
+    opens com.calculator.mycalculator.controller to javafx.fxml;
 }
