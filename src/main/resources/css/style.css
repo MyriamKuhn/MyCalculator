@@ -11,6 +11,9 @@
     -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-alignment: center-right;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 3px;
 }
 
 /* Formule en haut */
@@ -28,41 +31,55 @@
     -fx-font-weight: bold;
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
-    -fx-border-color: #444;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 5, 0, 0, 2);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 6, 0, 2, 2);
+    -fx-padding: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
 }
 
 /* Effet au survol */
 .button:hover {
     -fx-background-color: #686868;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 8, 0, 3, 3);
 }
 
-/* Boutons de chiffres */
+/* Effet de clic (bouton enfoncé) */
 .button:pressed {
     -fx-background-color: #444;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 4, 0, 1, 1);
+    -fx-translate-y: 2px;  /* Déplacement léger vers le bas */
 }
 
-/* Boutons spéciaux */
-.button[text="="] {
-    -fx-background-color: #ff9800;
+/* Boutons opérateurs */
+#btnPlus,
+#btnDelete,
+#btnDivide,
+#btnEqual,
+#btnInverse,
+#btnMinus,
+#btnMultiply,
+#btnPercent,
+#btnPi,
+#btnReset,
+#btnSquare,
+#btnSqrt
+{
+    -fx-background-color: #404040;
 }
 
-.button[text="="]:hover {
-    -fx-background-color: #e68900;
-}
-
-.button[text="="]:pressed {
-    -fx-background-color: #cc7800;
-}
-
-.button[text="C"], .button[text="⌫"] {
-    -fx-background-color: #d32f2f;
-}
-
-.button[text="C"]:hover, .button[text="⌫"]:hover {
-    -fx-background-color: #b71c1c;
-}
-
-.button[text="C"]:pressed, .button[text="⌫"]:pressed {
-    -fx-background-color: #8e0000;
+/* Effet au survol */
+#btnPlus:hover,
+#btnDelete:hover,
+#btnDivide:hover,
+#btnEqual:hover,
+#btnInverse:hover,
+#btnMinus:hover,
+#btnMultiply:hover,
+#btnPercent:hover,
+#btnPi:hover,
+#btnReset:hover,
+#btnSquare:hover,
+#btnSqrt:hover
+{
+    -fx-background-color: #505050;
 }
