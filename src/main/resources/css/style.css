@@ -19,7 +19,7 @@
 /* Formule en haut */
 #formula {
     -fx-text-fill: #b0b0b0;
-    -fx-font-size: 14px;
+    -fx-font-size: 10px;
     -fx-font-style: italic;
 }
 
