@@ -1,56 +1,96 @@
-/* Style général */
+/* ============================ */
+/*           General Styles      */
+/* ============================ */
+
+/* Main pane background style */
 #mainPane {
+    /* Create a gradient from dark gray to black for a sleek look */
     -fx-background-color: linear-gradient(to bottom, #3b3b3b, #1f1f1f);
 }
 
-/* Champ d'affichage */
+/* ============================ */
+/*            Viewer Styles      */
+/* ============================ */
+
+/* Display area for the current input or result */
 #viewer {
+    /* Dark background with a subtle border for a clean display */
     -fx-background-color: #222;
     -fx-border-color: #555;
+    /* White text to make it easily readable */
     -fx-text-fill: white;
+    /* Adjust font size and make text bold for emphasis */
     -fx-font-size: 20px;
     -fx-font-weight: bold;
+    /* Align text to the right for numerical input */
     -fx-alignment: center-right;
+    /* Rounded corners for a modern feel */
     -fx-border-radius: 5px;
     -fx-background-radius: 5px;
+    /* Small padding to give some space around the text */
     -fx-padding: 3px;
 }
 
-/* Formule en haut */
+/* ============================ */
+/*            Formula Styles     */
+/* ============================ */
+
+/* Display area for the formula at the top */
 #formula {
+    /* Light gray text to distinguish formula from the main display */
     -fx-text-fill: #b0b0b0;
+    /* Smaller font size and italic style for a distinct appearance */
     -fx-font-size: 10px;
     -fx-font-style: italic;
 }
 
-/* Boutons généraux */
+/* ============================ */
+/*           Button Styles       */
+/* ============================ */
+
+/* General button style */
 .button {
+    /* Dark gray background for the buttons */
     -fx-background-color: #575757;
+    /* White text for visibility */
     -fx-text-fill: white;
+    /* Bold and slightly larger font for better readability */
     -fx-font-size: 18px;
     -fx-font-weight: bold;
+    /* Rounded corners for a smooth look */
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
+    /* Drop shadow effect for depth */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 6, 0, 2, 2);
+    /* Padding inside buttons for better touch area */
     -fx-padding: 5px;
+    /* Transparent border to match the button color */
     -fx-border-width: 1px;
     -fx-border-color: transparent;
 }
 
-/* Effet au survol */
+/* Hover effect for buttons (change background color on hover) */
 .button:hover {
+    /* Slightly lighter background when hovering */
     -fx-background-color: #686868;
+    /* Stronger shadow effect for emphasis */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 8, 0, 3, 3);
 }
 
-/* Effet de clic (bouton enfoncé) */
+/* Button pressed effect (make button appear pressed) */
 .button:pressed {
+    /* Darker background to indicate the button is being pressed */
     -fx-background-color: #444;
+    /* Softer shadow and movement downwards to simulate pressing */
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.4), 4, 0, 1, 1);
-    -fx-translate-y: 2px;  /* Déplacement léger vers le bas */
+    -fx-translate-y: 2px;  /* Button moves down slightly */
 }
 
-/* Boutons opérateurs */
+/* ============================ */
+/*           Operator Buttons    */
+/* ============================ */
+
+/* Special styling for operator buttons (e.g., +, -, *, etc.) */
 #btnPlus,
 #btnDelete,
 #btnDivide,
@@ -58,16 +98,17 @@
 #btnInverse,
 #btnMinus,
 #btnMultiply,
-#btnPercent,
+#btnExponent,
 #btnPi,
 #btnReset,
 #btnSquare,
 #btnSqrt
 {
+    /* Darker background for operator buttons */
     -fx-background-color: #404040;
 }
 
-/* Effet au survol */
+/* Hover effect for operator buttons */
 #btnPlus:hover,
 #btnDelete:hover,
 #btnDivide:hover,
@@ -75,11 +116,12 @@
 #btnInverse:hover,
 #btnMinus:hover,
 #btnMultiply:hover,
-#btnPercent:hover,
+#btnExponent:hover,
 #btnPi:hover,
 #btnReset:hover,
 #btnSquare:hover,
 #btnSqrt:hover
 {
+    /* Slightly lighter background on hover */
     -fx-background-color: #505050;
 }

@@ -5,34 +5,46 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="mainPane" fx:id="mainPane" prefHeight="429.0" prefWidth="283.0"
+<AnchorPane id="mainPane" prefHeight="429.0" prefWidth="283.0"
             xmlns="http://javafx.com/javafx/21.0.6"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.calculator.mycalculator.controller.CalculatorController"
 >
-
+    <!-- Displays the formula at the top of the window -->
     <Label fx:id="formula" layoutX="6.0" layoutY="5.0" prefHeight="40.0" prefWidth="271.0" wrapText="true"/>
-    <TextField fx:id="viewer" layoutX="6.0" layoutY="44.0" prefHeight="34.0" prefWidth="271.0" text="0"/>
-    <Button fx:id="btnPercent" layoutX="13.0" layoutY="90.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="\%"/>
+
+    <!-- Main display area for results and calculations -->
+    <TextField fx:id="viewer" layoutX="6.0" layoutY="44.0" prefHeight="34.0" prefWidth="271.0" text="0" editable="false"/>
+
+    <!-- Scientific calculation buttons -->
+    <Button fx:id="btnExponent" layoutX="13.0" layoutY="90.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="10^x"/>
     <Button fx:id="btnPi" layoutX="78.0" layoutY="90.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="π"/>
     <Button fx:id="btnReset" layoutX="143.0" layoutY="90.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="C"/>
     <Button fx:id="btnDelete" layoutX="208.0" layoutY="90.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="⌫"/>
+
+    <!-- Mathematical operation buttons -->
     <Button fx:id="btnInverse" layoutX="13.0" layoutY="145.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="1/x"/>
     <Button fx:id="btnSquare" layoutX="78.0" layoutY="145.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="x²"/>
     <Button fx:id="btnSqrt" layoutX="143.0" layoutY="145.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="²√x"/>
     <Button fx:id="btnDivide" layoutX="208.0" layoutY="145.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="÷"/>
+
+    <!-- Number buttons -->
     <Button fx:id="btnSeven" layoutX="13.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="7"/>
     <Button fx:id="btnEight" layoutX="78.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="8"/>
     <Button fx:id="btnNine" layoutX="143.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="9"/>
     <Button fx:id="btnMultiply" layoutX="208.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="×"/>
+
     <Button fx:id="btnFour" layoutX="13.0" layoutY="255.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="4"/>
     <Button fx:id="btnFive" layoutX="78.0" layoutY="255.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="5"/>
     <Button fx:id="btnSix" layoutX="143.0" layoutY="255.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="6"/>
     <Button fx:id="btnMinus" layoutX="208.0" layoutY="255.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="-"/>
+
     <Button fx:id="btnOne" layoutX="13.0" layoutY="310.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="1"/>
     <Button fx:id="btnTwo" layoutX="78.0" layoutY="310.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="2"/>
     <Button fx:id="btnThree" layoutX="143.0" layoutY="310.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="3"/>
     <Button fx:id="btnPlus" layoutX="208.0" layoutY="310.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="+"/>
+
+    <!-- Special function buttons -->
     <Button fx:id="btnPlusMinus" layoutX="13.0" layoutY="365.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="±"/>
     <Button fx:id="btnZero" layoutX="78.0" layoutY="365.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text="0"/>
     <Button fx:id="btnPoint" layoutX="143.0" layoutY="365.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0" text=","/>
