@@ -80,7 +80,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click event, updating the displayed text and formula.
-     *
+     * <p>
      * This method is triggered when a button on the calculator is clicked. It appends
      * the clicked value to the current displayed text and updates the formula being built.
      * If the formula is empty and the clicked value is "0", the method does nothing. If the
@@ -116,7 +116,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the delete button click event, updating the displayed text and formula.
-     *
+     * <p>
      * This method is triggered when the delete button on the calculator is clicked.
      * It removes the last character from the displayed text and the formula. Special
      * cases are handled when the text ends with a decimal point or when the text is
@@ -166,7 +166,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the plus-minus button click event, toggling the sign of the displayed number.
-     *
+     * <p>
      * This method is triggered when the plus-minus button (for switching between positive
      * and negative) is clicked. If the current text displayed is not "0", the sign of the
      * number is toggled: if it's positive, a minus sign is added at the beginning; if it's
@@ -194,7 +194,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the decimal point button click event, adding a decimal point to the displayed number.
-     *
+     * <p>
      * This method is triggered when the decimal point button is clicked. If the current number
      * does not already contain a decimal point, it adds one to the displayed text. If the current
      * displayed number is "0", it will set the display to "0." and update the formula accordingly.
@@ -221,7 +221,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Resets the calculator's display and the current formula.
-     *
+     * <p>
      * This method is triggered when the reset button is clicked. It resets the displayed value to "0"
      * and clears the current formula. The formula display is also updated to reflect the empty formula.
      */
@@ -238,7 +238,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for an operator in the calculator.
-     *
+     * <p>
      * This method is called when an operator button (e.g., +, -, *, /) is clicked. It updates the
      * current formula by appending the operator and resets the displayed value to "0".
      * If the previous formula ends with an operator, it removes the last operator before appending the new one.
@@ -270,7 +270,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the Pi (π) button in the calculator.
-     *
+     * <p>
      * This method is called when the Pi button is clicked. It adds the value of Pi to the display and
      * appends it to the current formula. If the display is currently showing "0", it will replace it with Pi.
      */
@@ -288,7 +288,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the square root (√) operation in the calculator.
-     *
+     * <p>
      * This method is called when the square root button is clicked. It calculates the square root of the
      * current value on the display. If the value is negative, the display is reset to "0". The square root
      * result is then displayed and added to the current formula.
@@ -324,7 +324,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the square (x²) operation in the calculator.
-     *
+     * <p>
      * This method is called when the square button is clicked. It calculates the square of the
      * current value displayed on the calculator. The result is then displayed and added to the current formula.
      */
@@ -347,7 +347,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the inverse (1/x) operation in the calculator.
-     *
+     * <p>
      * This method is called when the inverse button is clicked. It calculates the inverse (1 divided by the current value)
      * of the number displayed on the calculator. The result is then displayed and added to the current formula.
      */
@@ -373,7 +373,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the exponentiation operation (10^x) in the calculator.
-     *
+     * <p>
      * This method is called when the exponent button (10^x) is clicked. It calculates the exponentiation of 10 raised
      * to the power of the current value displayed on the calculator. The result is then displayed and added to the current formula.
      */
@@ -399,7 +399,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Handles the button click for the equal (=) operation in the calculator.
-     *
+     * <p>
      * This method is called when the equal button is clicked. It attempts to evaluate the mathematical expression
      * represented by the current formula, and displays the result. If the formula is invalid, an error message is shown.
      */
@@ -435,7 +435,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Displays an alert when the maximum number of digits is reached in the calculator input.
-     *
+     * <p>
      * This method is called when the user tries to input more digits than the allowed maximum. It shows a warning alert
      * informing the user that they have reached the digit limit and cannot enter more.
      */
@@ -455,7 +455,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Checks if the given character is a valid operator (+, -, *, /).
-     *
+     * <p>
      * This method is used to verify if the provided character represents a mathematical operator.
      * It returns true if the character is one of the valid operators: +, -, *, or /.
      *
@@ -468,7 +468,7 @@ public class CalculatorController implements Initializable {
 
     /**
      * Formats a number as a string, removing the decimal point if the number is an integer.
-     *
+     * <p>
      * This method checks if the provided number is an integer by comparing it to its casted integer
      * value. If the number is an integer, it is returned as an integer string (without decimals).
      * If the number has a decimal part, it is returned as a floating-point string.

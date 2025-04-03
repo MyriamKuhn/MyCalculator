@@ -24,10 +24,9 @@ public class Main extends Application {
      * It loads the FXML layout, applies stylesheets, and sets up the main stage.
      *
      * @param stage The primary stage for this application.
-     * @throws Exception If there is an issue loading the FXML or any other error occurs.
      */
     @Override
-    public void start(Stage stage) throws Exception {
+    public void start(Stage stage) {
         try {
             // Load the FXML layout file for the calculator
             FXMLLoader loader = new FXMLLoader();
