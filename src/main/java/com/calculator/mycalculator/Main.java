@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import org.kordamp.bootstrapfx.BootstrapFX;
 
@@ -37,6 +38,11 @@ public class Main extends Application {
             Scene scene = new Scene(root);
             scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
             scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/css/style.css")).toExternalForm());
+
+            // Add the icon
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/logo16.png"))));
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/logo32.png"))));
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/icons/logo64.png"))));
 
             // Set the stage properties (title, scene, etc.)
             stage.setTitle("Ma calculatrice");
